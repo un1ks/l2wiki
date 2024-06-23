@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Hubot Sans';
+    src: url('HubotSans-Light.woff2') format('woff2'),
+        url('HubotSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hubot Sans Condensed';
+    src: url('HubotSansCondensed-Regular.woff2') format('woff2'),
+        url('HubotSansCondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hubot Sans Condensed';
+    src: url('HubotSansCondensed-Medium.woff2') format('woff2'),
+        url('HubotSansCondensed-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hubot Sans Condensed';
+    src: url('HubotSansCondensed-SemiBold.woff2') format('woff2'),
+        url('HubotSansCondensed-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hubot Sans';
+    src: url('HubotSans-Medium.woff2') format('woff2'),
+        url('HubotSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

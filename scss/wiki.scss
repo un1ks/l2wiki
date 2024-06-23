@@ -1,0 +1,108 @@
+@import url(./theme.css);
+@import url(./font.css);
+@import url(./nav.css);
+@import url(./modal.css);
+@import url(./header.css);
+@import url(./list.css);
+@import url(./pagination.css);
+@import url(./footer.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Hubot Sans';
+    background-color: rgb(var(--body));
+
+    &::-webkit-scrollbar {
+        background-color: var(--body);
+        width: 0.4rem;
+        height: 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgb(var(--contentColor), 0.5);
+        border-radius: 3rem;
+        width: 0.4rem;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 40rem;
+        top: 0;
+        background: var(--bg);
+        left: 0;
+        opacity: 0.7;
+        mask: linear-gradient(black, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0));
+        z-index: -1;
+    }
+}
+
+button, input, select {
+    font-family: 'Hubot Sans';
+}
+
+.container {
+    width: min(90%, 70rem);
+    margin: 0 auto;
+}
+
+.errorMsg {
+    color: red !important;
+    margin: 0;
+    padding: 1rem;
+}
+
+
+html {
+    font-size: var(--base-font-size);
+}
+
+@media (max-width: 480px) {
+    :root {
+        --base-font-size: 3vw;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    :root {
+        --base-font-size: 3vw;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    :root {
+        --base-font-size: 1vw;
+    }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1365px) {
+    :root {
+        --base-font-size: 1vw;
+    }
+}
+
+
+@media (min-width: 1366px) and (max-width: 1920px) {
+    :root {
+        --base-font-size: 16px;
+    }
+}
+
+@media (min-width: 1921px) {
+    :root {
+        --base-font-size: 16px;
+    }
+}
+
+@media (min-width: 2560px) {
+    :root {
+        --base-font-size: 16px;
+    }
+}

@@ -1,0 +1,122 @@
+.wikiHeader {
+  backdrop-filter: blur(4rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.178);
+  background-color: rgba(0, 0, 0, 0.188);
+  border-radius: 0.5rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.05rem solid rgb(var(--primary), 0.15);
+}
+.wikiHeader h1 {
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+  color: rgb(var(--primary));
+  text-align: center;
+}
+.wikiHeader h1 svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  transform: translateY(0.3rem);
+}
+.wikiHeader h1 svg path {
+  fill: rgb(var(--primary), 0.2);
+}
+.wikiHeader p {
+  text-align: center;
+  color: rgb(var(--primary), 0.5);
+  margin: 1rem 0 2rem 0;
+}
+.wikiHeader .searchBox {
+  width: 100%;
+  background-color: rgb(var(--contentColor), 0.4);
+  border: 0.05rem solid rgb(var(--primary), 0.1);
+  border-radius: 0.3rem;
+}
+.wikiHeader .searchBox #search-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.wikiHeader .searchBox #search-container li:last-child {
+  padding-bottom: 1.5rem;
+}
+.wikiHeader .searchBox #search-container li {
+  padding: 0.5rem 1.5rem;
+}
+.wikiHeader .searchBox #search-container li div {
+  display: flex;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 0.3rem;
+  border: 0.05rem solid rgb(var(--primary), 0.05);
+}
+.wikiHeader .searchBox #search-container li div:hover {
+  background-color: rgb(var(--contentColor), 0.8);
+}
+.wikiHeader .searchBox #search-container li div span:nth-child(1) {
+  display: flex;
+  width: 12rem;
+  height: 8rem;
+  overflow: hidden;
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+.wikiHeader .searchBox #search-container li div span:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wikiHeader .searchBox #search-container li div span:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  gap: 0.3rem;
+  color: rgb(var(--primary), 0.5);
+}
+.wikiHeader .searchBox #search-container li div span:nth-child(2) strong {
+  font-weight: normal;
+  text-transform: capitalize;
+}
+.wikiHeader .searchBox .input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wikiHeader .searchBox .input svg {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  right: 1.3rem;
+  pointer-events: none;
+}
+.wikiHeader .searchBox .input svg path {
+  fill: rgb(var(--primary), 0.5);
+}
+.wikiHeader .searchBox input {
+  width: 100%;
+  background-color: transparent;
+  color: rgb(var(--primary));
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .wikiHeader {
+    padding: 2rem;
+  }
+  .wikiHeader .searchBox #search-container li div span:nth-child(1) {
+    display: none;
+  }
+  .wikiHeader .searchBox #search-container li div span:nth-child(2) {
+    padding: 2rem;
+  }
+}/*# sourceMappingURL=header.css.map */

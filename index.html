@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination Example</title>
+    <link rel="stylesheet" href="css/wiki.min.css">
+</head>
+
+<body>
+
+
+    <!--Nav-->
+
+    <nav>
+        <input type="checkbox" id="navM">
+        <label for="navM"><span></span></label>
+
+        <div>
+            <ul>
+                <li>
+                    <a href="/" target="_blank"><img src="img/logo.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"/></svg>
+                        Back to Home
+                    </a>
+                </li>
+    
+                <li class="active">
+                    <a href="/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                        Wiki
+                    </a>
+                </li>
+            </ul>
+    
+            <ul>
+                <li>
+                    <a href="/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/></svg>
+                        My Account
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--end Nav-->
+
+
+
+    <!--Header-->
+
+    <div class="wikiHeader container">
+
+        <h1>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+            Welcome to L2 Wiki
+        </h1>
+
+        <p>Here you will find guides, articles and more information about our projects</p>
+
+        <div class="searchBox">
+            <div class="input">
+                <input type="text" id="search-input" placeholder="Search for a article...">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+            </div>
+
+            <ul id="search-container"></ul>
+        </div>
+    </div>
+
+    <!--end Header-->
+
+
+    <!--List-->
+
+    <div class="wikiList container">
+
+        <div class="wikiTitle">
+            <h2>Wiki</h2>
+
+            <div>
+                <span>
+                    <input type="radio" name="wikiFilter" id="all" checked>
+                    <label for="all">All</label>
+                </span>
+
+                <span>
+                    <input type="radio" name="wikiFilter" id="eva">
+                    <label for="eva">Eva</label>
+                </span>
+
+                <span>
+                    <input type="radio" name="wikiFilter" id="aden">
+                    <label for="aden">Aden</label>
+                </span>
+
+                <span>
+                    <input type="radio" name="wikiFilter" id="essence">
+                    <label for="essence">Essence</label>
+                </span>
+
+                <span>
+                    <input type="radio" name="wikiFilter" id="giran">
+                    <label for="giran">Giran</label>
+                </span>
+            </div>
+        </div>
+
+        <ul id="data-container"></ul>
+
+        <div id="pagination-container"></div>
+    </div>
+
+    <!--end List-->
+
+
+    <!--Modal-->
+
+    <div id="wikiWindow" class="wikiModal">
+
+        <div class="wikiModal_content container">
+
+            <span class="wikiModal_close"></span>
+            <div id="preloader" style="display: none;"><span></span></div>
+
+            <div id="wikiContent"></div>
+        </div>
+    </div>
+
+    <!--end Modal-->
+
+
+    <!--Footer-->
+
+    <footer>
+        <div class="container">
+            <div><img src="img/logo.png" alt=""></div>
+            <p>© 2024 Lineage 2<br>
+                This is just a test server, all rights reserved to NCSoft.</p>
+        </div>
+    </footer>
+
+    <!--end Footer-->
+
+
+    <!--Scripts-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/pagination.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/jscript.js"></script>
+
+    <!---->
+    
+</body>
+
+</html>

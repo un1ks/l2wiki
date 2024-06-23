@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Hubot Sans";
+  src: url("../font/HubotSans-Light.woff2") format("woff2"), url("../font/HubotSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hubot Sans Condensed";
+  src: url("../font/HubotSansCondensed-Regular.woff2") format("woff2"), url("../font/HubotSansCondensed-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hubot Sans Condensed";
+  src: url("../font/HubotSansCondensed-Medium.woff2") format("woff2"), url("../font/HubotSansCondensed-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hubot Sans Condensed";
+  src: url("../font/HubotSansCondensed-SemiBold.woff2") format("woff2"), url("../font/HubotSansCondensed-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hubot Sans";
+  src: url("../font/HubotSans-Medium.woff2") format("woff2"), url("../font/HubotSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}/*# sourceMappingURL=font.css.map */

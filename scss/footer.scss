@@ -1,0 +1,18 @@
+footer {
+    border-top: 0.05rem solid rgb(var(--primary), 0.05);
+    text-align: center;
+    padding: 3rem;
+    background: linear-gradient(rgb(var(--contentColor), 0.1), transparent);
+
+    img {
+        margin: 0 0 2rem 0;
+        width: 10rem;
+        opacity: 0.5;
+    }
+
+    p {
+        margin: 0;
+        color: rgb(var(--primary), 0.4);
+        font-size: 0.7rem;
+    }
+}
